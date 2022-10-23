@@ -1,0 +1,125 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #0f0f0f;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.mainTitle {
+	font-size: 3.5rem;
+	color: rgba(215, 215, 215, 0.3);
+	font-weight: bold;
+}
+
+.form {
+	width: 800px;
+	height: auto;
+	/*border: 2px solid white;*/
+}
+
+.todoHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border: 2px solid black;
+	margin-bottom: 20px;
+	background-color: rgba(181, 232, 231, 0.4);
+}
+
+.todoHeader > input {
+	width: 500px;
+	height: 40px;
+	font-size: 1.8rem;
+	padding: 1rem;
+	border: none;
+	border-radius: 15px;
+}
+
+.todoHeader > input::placeholder {
+	font-size: 25px;
+}
+
+.btn {
+	background-color: rgba(255, 205, 3, 0.9);
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.list {
+	list-style: none;
+	font-size: 26px;
+	/*text-align: center;*/
+}
+
+.list.strikeText {
+	text-decoration: line-through;
+}
+
+/*.list.activeButton {
+	list-style: none;
+	font-size: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}*/
+
+.todoContainer {
+	width: 800px;
+	height: auto;
+	margin-top: 20px;
+	border: 2px solid black;
+	background-color: rgba(181, 232, 231, 0.4);
+}
+
+.singleTodo {
+	width: 800px;
+	height: auto;
+	border-top: 1px solid black;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+	/*align-items: center;*/
+	padding: 15px;
+	margin: 0px;
+}
+
+.complete {
+	background: white;
+	border: 2px solid green;
+	color: green;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.delete {
+	background: white;
+	border: 2px solid red;
+	color: red;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.strikeThroughText {
+	text-decoration: line-through;
+	color: black;
+}
+
+
